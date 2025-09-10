@@ -1,4 +1,4 @@
-# Project GoLang
+# Project Sesasi Backend App
 
 Repositori ini adalah aplikasi backend menggunakan **Go**. Berikut adalah struktur dan panduan setup dasar.
 
