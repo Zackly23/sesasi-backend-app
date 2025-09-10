@@ -1,15 +1,11 @@
 # Project GoLang
 
-Project ini adalah aplikasi backend menggunakan **Go**. Berikut adalah struktur dan panduan setup dasar.
+Repositori ini adalah aplikasi backend menggunakan **Go**. Berikut adalah struktur dan panduan setup dasar.
 
 ---
 
 ## 📁 Struktur Folder
 ```bash
-# Example:
-# Original tree command:
-
-$ tree
 .
 ├── config/ # Konfigurasi aplikasi (database, dll)
 ├── handlers/ # Handler untuk endpoint HTTP
@@ -32,63 +28,56 @@ $ tree
 
 ## ⚙️ Prerequisites
 
-- Go >= 1.21
-- PostgreSQL / MySQL / database lain (sesuaikan dengan config)
+Sebelum memulai, pastikan sudah terinstall:
+
+- [Go](https://go.dev/) >= 1.23.3
+- [PostgreSQL](https://www.postgresql.org/) (atau database lain sesuai config)
 - Git
 
 ---
 
-## 🚀 Setup Project
+## 📦 Dependencies
 
-1. **Clone repository**
+Project ini menggunakan beberapa library Go yang dikelola lewat `go.mod`:
 
-```bash
-git clone https://github.com/username/repo.git
-cd repo
-Copy .env.example menjadi .env dan isi sesuai environment kamu
+- [Fiber](https://gofiber.io/) → web framework
+- [Gorm](https://gorm.io/) → ORM untuk database
+- [Validator](https://github.com/go-playground/validator) → validasi struct
+- [UUID](https://github.com/google/uuid) → generate UUID
+- [JWT](https://github.com/golang-jwt/jwt) → autentikasi token
 
-bash
-Copy code
-cp .env.example .env
-Install dependencies
+---
 
-bash
-Copy code
-go mod tidy
-Jalankan aplikasi
+## 🚀 Panduan Pengaturan Proyek
 
-bash
-Copy code
-go run main.go
-Aplikasi akan berjalan di port yang sudah ditentukan di .env (default bisa 8080).
+1.  **Klon Repositori**
 
-🗂 Folder Descriptions
-config: berisi konfigurasi database, server, dan environment.
+    Buka terminal dan jalankan perintah berikut:
+    ```bash
+    git clone [https://github.com/username/repo.git](https://github.com/username/repo.git)
+    cd repo
+    ```
 
-handlers: fungsi-fungsi yang menangani request HTTP.
+2.  **Konfigurasi Variabel Lingkungan**
 
-middlewares: filter request, seperti autentikasi dan logging.
+    Salin file `.env.example` menjadi `.env` dan sesuaikan nilainya:
+    ```bash
+    cp .env.example .env
+    ```
 
-models: struct untuk database dan ORM mapping.
+3.  **Instalasi Dependensi**
 
-routes: define endpoint dan group route.
+    Jalankan perintah ini untuk mengunduh semua modul yang diperlukan:
+    ```bash
+    go mod tidy
+    ```
 
-schemas: validation schema untuk request/response.
+4.  **Menjalankan Aplikasi**
 
-seeders: script untuk memasukkan data awal ke database.
+    Jalankan aplikasi dengan perintah:
+    ```bash
+    go run main.go
+    ```
+    Aplikasi akan berjalan pada port yang ditentukan di file `.env` (port default `8080`).
+```
 
-utils: fungsi pembantu umum.
-
-📦 Deploy / Production
-Pastikan .env sudah terisi environment production.
-
-Build aplikasi:
-
-bash
-Copy code
-go build -o app
-Jalankan binary:
-
-bash
-Copy code
-./app
