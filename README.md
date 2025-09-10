@@ -7,19 +7,36 @@ Project ini adalah aplikasi backend menggunakan **Go**. Berikut adalah struktur 
 ## 📁 Struktur Folder
 $ tree
 .
-├── config/ # Konfigurasi aplikasi (database, dll)
-├── handlers/ # Handler untuk endpoint HTTP
-├── middlewares/ # Middleware (auth, user)
-├── models/ # Model database / struct
-├── routes/ # Definisi route dan grouping endpoint
-├── schemas/ # Schema validation / request & response structs
-├── seeders/ # Script untuk seed data awal
-├── utils/ # Utility functions / helpers
-├── main.go # Entry point aplikasi
-├── go.mod # Modul dependencies Go
-├── go.sum # Checksum dependencies Go
-├── .env.example # Contoh environment variables
-├── .gitignore # File yang di-ignore oleh Git
+├── dir1
+│   ├── file11.ext
+│   └── file12.ext
+├── dir2
+│   ├── file21.ext
+│   ├── file22.ext
+│   └── file23.ext
+├── dir3
+├── file_in_root.ext
+└── README.md
+
+3 directories, 7 files
+Markdown tree command:
+
+
+$ ./tree-md .
+# Project tree
+
+.
+ * [tree-md](./tree-md)
+ * [dir2](./dir2)
+   * [file21.ext](./dir2/file21.ext)
+   * [file22.ext](./dir2/file22.ext)
+   * [file23.ext](./dir2/file23.ext)
+ * [dir1](./dir1)
+   * [file11.ext](./dir1/file11.ext)
+   * [file12.ext](./dir1/file12.ext)
+ * [file_in_root.ext](./file_in_root.ext)
+ * [README.md](./README.md)
+ * [dir3](./dir3)
 
 
 ---
