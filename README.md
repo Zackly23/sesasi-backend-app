@@ -48,6 +48,18 @@ Project ini menggunakan beberapa library Go yang dikelola lewat `go.mod`:
 
 ---
 
+## 🗄️ Database ERD
+
+Skema database project ini dapat dilihat melalui gambar atau link berikut:
+
+### Link ERD
+[Schema ERD](https://dbdiagram.io/d/68c0d94561a46d388e4b20d0)
+
+### Preview ERD
+![ERD Database](<img width="1024" height="974" alt="schema ERD" src="https://github.com/user-attachments/assets/871b2a44-fbb7-4a28-9b29-2554693fc764" />)
+
+---
+
 ## 🚀 Panduan Pengaturan Proyek
 
 1.  **Klon Repositori**
@@ -78,6 +90,6 @@ Project ini menggunakan beberapa library Go yang dikelola lewat `go.mod`:
     ```bash
     go run main.go
     ```
-    Aplikasi akan berjalan pada port yang ditentukan di file `.env` (port default `8080`).
+    Aplikasi akan berjalan pada port yang ditentukan di file `.env` (port default `3001`).
 ```
 
