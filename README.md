@@ -56,35 +56,35 @@ Skema database project ini dapat dilihat melalui gambar atau link berikut:
 [Schema ERD](https://dbdiagram.io/d/68c0d94561a46d388e4b20d0)
 
 ### Preview ERD
-![ERD Database](<img width="1024" height="974" alt="schema ERD" src="https://github.com/user-attachments/assets/871b2a44-fbb7-4a28-9b29-2554693fc764" />)
+![ERD Database](https://github.com/user-attachments/assets/871b2a44-fbb7-4a28-9b29-2554693fc764)
 
 ---
 
 ## 🚀 Panduan Pengaturan Proyek
 
-1.  **Klon Repositori**
+1.  **Clone Repositori**
 
     Buka terminal dan jalankan perintah berikut:
     ```bash
-    git clone [https://github.com/username/repo.git](https://github.com/username/repo.git)
+    git clone https://github.com/Zackly23/sesasi-backend-app
     cd repo
     ```
 
-2.  **Konfigurasi Variabel Lingkungan**
+2.  **Konfigurasi Variabel Environemt**
 
     Salin file `.env.example` menjadi `.env` dan sesuaikan nilainya:
     ```bash
     cp .env.example .env
     ```
 
-3.  **Instalasi Dependensi**
+3.  **Instalasi Dependency**
 
     Jalankan perintah ini untuk mengunduh semua modul yang diperlukan:
     ```bash
     go mod tidy
     ```
 
-4.  **Menjalankan Aplikasi**
+4.  **Run App**
 
     Jalankan aplikasi dengan perintah:
     ```bash
