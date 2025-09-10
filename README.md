@@ -5,6 +5,10 @@ Project ini adalah aplikasi backend menggunakan **Go**. Berikut adalah struktur 
 ---
 
 ## 📁 Struktur Folder
+```bash
+# Example:
+# Original tree command:
+
 $ tree
 .
 ├── dir1
@@ -37,6 +41,7 @@ $ ./tree-md .
  * [file_in_root.ext](./file_in_root.ext)
  * [README.md](./README.md)
  * [dir3](./dir3)
+```
 
 
 ---
