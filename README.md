@@ -67,7 +67,7 @@ Skema database project ini dapat dilihat melalui gambar atau link berikut:
     Buka terminal dan jalankan perintah berikut:
     ```bash
     git clone https://github.com/Zackly23/sesasi-backend-app
-    cd repo
+    cd sesasi-backend-app
     ```
 
 2.  **Konfigurasi Variabel Environemt**
