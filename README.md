@@ -5,7 +5,7 @@ Project ini adalah aplikasi backend menggunakan **Go**. Berikut adalah struktur 
 ---
 
 ## 📁 Struktur Folder
-
+$ tree
 ├── config/ # Konfigurasi aplikasi (database, dll)
 ├── handlers/ # Handler untuk endpoint HTTP
 ├── middlewares/ # Middleware (auth, user)
